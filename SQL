@@ -1,0 +1,46 @@
+-- select *  
+-- from public.encounters
+-- where encounterclass in ('outpatient','ambulatory')
+
+
+-- SELECT description, 
+--        COUNT(*)
+-- FROM public.conditions
+-- where description != 'Body Mass Index 30.0-30.9, adult'
+-- GROUP BY description
+-- having count(*) > 5000
+-- order by count (*) desc
+
+------------------------------------
+-- find all patients form boston ---
+------------------------------------
+
+
+-- select * from public.patients where city = 'Boston'
+
+
+------------------------------------
+-- find all patients with the codes 
+------------------------------------
+
+-- select * from public.conditions where code in ('585.1', '585.2','585.3','585.4')
+
+
+------------------------------------
+--write a query that does the following--
+--1. lists out number of patients per city in desc order
+--2. does not include boston
+--3. must have atleast 100 patients from that city
+------------------------------------
+-- SELECT city, 
+--        COUNT(*)
+-- FROM public.patients
+-- where city!= 'Boston'
+-- GROUP BY city
+-- having count(*) >= 100
+-- order by count (*) desc
+
+
+select * from public.immunizations 
+
+
