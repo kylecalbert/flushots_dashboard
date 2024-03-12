@@ -41,6 +41,4 @@
 -- order by count (*) desc
 
 
-select * from public.immunizations 
-
-
+-- select * from public.immunizations 
